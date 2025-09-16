@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets - never commit real credentials
+.env
+.env.*
+!.env.example
+
+# Runtime state written by the services (speed, robot status, step history, TIA cache, ...)
+data/*
+!data/README.md
+
+# Optional TIA Portal project copies
+*.ap19
+*.zap19
+
+# Logs / temporary files
+*.log
+*.tmp
+*.bak
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+__MACOSX/
