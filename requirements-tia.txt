@@ -1,0 +1,2 @@
+# Optional: TIA Portal Openness integration (Windows + installed TIA Portal V19)
+pythonnet>=3.0.3; sys_platform == "win32"
