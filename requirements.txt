@@ -1,0 +1,11 @@
+# Core runtime for both services (copilot API + robot controller)
+fastapi>=0.115
+uvicorn>=0.34
+pydantic>=2.7
+requests>=2.32
+python-snap7>=2.0.2,<3
+pyserial>=3.5
+python-dotenv>=1.0
+
+# uArm Swift Pro SDK 2.0.7 is not published on PyPI - pinned to the upstream commit
+uArm-Python-SDK @ https://github.com/uArm-Developer/uArm-Python-SDK/archive/77215da403ab9bb98ee1869805a612f78d5635dc.zip
