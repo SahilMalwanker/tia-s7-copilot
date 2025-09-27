@@ -1,0 +1,3 @@
+# Optional: hands-free voice assistant (wake word "copilot")
+SpeechRecognition>=3.10
+PyAudio>=0.2.14
