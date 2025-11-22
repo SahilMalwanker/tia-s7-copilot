@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="1200" height="650" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="Hardware and wiring overview of the assembly cell">
+<title>Hardware: S7-1500 rack, field I/O, three uArm Swift Pro robots and the operator PC</title>
+<defs>
+  <pattern id="hwdots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#ffffff" fill-opacity=".05"/></pattern>
+  <linearGradient id="hwbold" x1="0" x2="1"><stop offset="0" stop-color="#00ffb9"/><stop offset="1" stop-color="#00e6dc"/></linearGradient>
+</defs>
+<style>
+  .flow { animation: flow 1.4s linear infinite; }
+  @keyframes flow { to { stroke-dashoffset: -20; } }
+  @media (prefers-reduced-motion: reduce) { .flow { animation: none; } }
+</style>
+<rect width="1200" height="650" rx="22" fill="#000028"/>
+<rect x="1" y="1" width="1198" height="648" rx="21" fill="url(#hwdots)" stroke="#26265a"/>
+<rect x="0" y="646" width="1200" height="4" fill="url(#hwbold)"/>
+<text x="40" y="50" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12.5" fill="#00ffb9" letter-spacing="1.6">HOW THE CELL IS WIRED</text>
+<text x="1160" y="50" text-anchor="end" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9999b3">S7-1500 · 3× uArm Swift Pro · 2 conveyors · 4 proximity sensors</text>
+<rect x="40" y="84" width="260" height="74" rx="12" fill="#0e0e38" stroke="#37376b"/>
+<text x="56" y="110" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#00ffb9" letter-spacing="1.2">AZURE OPENAI</text>
+<text x="56" y="138" text-anchor="start" font-size="12.5" font-weight="400" fill="#d1d1de">chat completions · intent routing</text>
+<rect x="40" y="196" width="260" height="250" rx="12" fill="#0e0e38" stroke="#009999"/>
+<text x="56" y="222" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#00ffb9" letter-spacing="1.2">OPERATOR PC · WINDOWS</text>
+<text x="56" y="246" text-anchor="start" font-size="13.5" font-weight="400" fill="#ffffff">Dashboard + chat</text>
+<text x="284" y="246" text-anchor="end" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="400" fill="#9999b3">browser :8000</text>
+<line x1="56" y1="261" x2="284" y2="261" stroke="#26265a"/>
+<text x="56" y="286" text-anchor="start" font-size="13.5" font-weight="400" fill="#ffffff">Copilot API</text>
+<text x="284" y="286" text-anchor="end" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="400" fill="#9999b3">FastAPI :8000</text>
+<line x1="56" y1="301" x2="284" y2="301" stroke="#26265a"/>
+<text x="56" y="326" text-anchor="start" font-size="13.5" font-weight="400" fill="#ffffff">Robot controller</text>
+<text x="284" y="326" text-anchor="end" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="400" fill="#9999b3">FastAPI :8001</text>
+<line x1="56" y1="341" x2="284" y2="341" stroke="#26265a"/>
+<text x="56" y="366" text-anchor="start" font-size="13.5" font-weight="400" fill="#ffffff">Voice assistant</text>
+<text x="284" y="366" text-anchor="end" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="400" fill="#9999b3">wake word</text>
+<line x1="56" y1="381" x2="284" y2="381" stroke="#26265a"/>
+<text x="56" y="406" text-anchor="start" font-size="13.5" font-weight="400" fill="#ffffff">TIA Portal V19</text>
+<text x="284" y="406" text-anchor="end" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="400" fill="#9999b3">Openness, optional</text>
+<line x1="170" y1="158" x2="170" y2="196" stroke="#d1d1de" stroke-width="2" stroke-dasharray="4 4" class="flow"/>
+<text x="178" y="182" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="400" fill="#9999b3">HTTPS</text>
+<text x="420" y="96" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" font-weight="400" fill="#00ffb9">S7-1500 PLC</text>
+<rect x="420" y="110" width="440" height="200" rx="10" fill="#0e0e38" stroke="#37376b"/>
+<rect x="432" y="122" width="132" height="176" rx="6" fill="#1d1d4b" stroke="#009999" stroke-width="1.5"/>
+<rect x="444" y="134" width="108" height="42" rx="4" fill="#000028" stroke="#37376b"/>
+<text x="454" y="151" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="400" fill="#00ffb9">RUN</text>
+<text x="454" y="167" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="400" fill="#ffffff">1511-1 PN</text>
+<text x="444" y="198" text-anchor="start" font-size="12.5" font-weight="700" fill="#ffffff">CPU 1511-1 PN</text>
+<text x="444" y="216" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" fill="#9999b3">6ES7 511-1AK02-0AB0</text>
+<text x="444" y="232" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" fill="#9999b3">firmware V2.9</text>
+<rect x="444" y="252" width="16" height="13" rx="2" fill="#000028" stroke="#00ffb9"/>
+<rect x="466" y="252" width="16" height="13" rx="2" fill="#000028" stroke="#00ffb9"/>
+<text x="492" y="263" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" fill="#d1d1de">X1 P1 / P2</text>
+<rect x="572" y="122" width="90" height="176" rx="6" fill="#1d1d4b" stroke="#37376b"/>
+<rect x="584" y="134" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="620" y="134" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="584" y="146" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="620" y="146" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="584" y="158" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="620" y="158" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="584" y="170" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="620" y="170" width="30" height="6" rx="2" fill="#33334e"/>
+<text x="582" y="206" text-anchor="start" font-size="11.5" font-weight="700" fill="#ffffff">AQ 8xU/I</text>
+<text x="582" y="222" text-anchor="start" font-size="11.5" font-weight="700" fill="#ffffff">HS</text>
+<text x="582" y="246" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" fill="#9999b3">6ES7 532-</text>
+<text x="582" y="260" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" fill="#9999b3">5HF00-0AB0</text>
+<rect x="668" y="122" width="90" height="176" rx="6" fill="#1d1d4b" stroke="#37376b"/>
+<rect x="680" y="134" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="716" y="134" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="680" y="146" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="716" y="146" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="680" y="158" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="716" y="158" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="680" y="170" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="716" y="170" width="30" height="6" rx="2" fill="#33334e"/>
+<text x="678" y="206" text-anchor="start" font-size="11.5" font-weight="700" fill="#ffffff">DI 16x</text>
+<text x="678" y="222" text-anchor="start" font-size="11.5" font-weight="700" fill="#ffffff">24VDC BA</text>
+<text x="678" y="246" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" fill="#9999b3">6ES7 521-</text>
+<text x="678" y="260" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" fill="#9999b3">1BH10-0AA0</text>
+<rect x="764" y="122" width="90" height="176" rx="6" fill="#1d1d4b" stroke="#37376b"/>
+<rect x="776" y="134" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="812" y="134" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="776" y="146" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="812" y="146" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="776" y="158" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="812" y="158" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="776" y="170" width="30" height="6" rx="2" fill="#33334e"/>
+<rect x="812" y="170" width="30" height="6" rx="2" fill="#33334e"/>
+<text x="774" y="206" text-anchor="start" font-size="11.5" font-weight="700" fill="#ffffff">DQ 8x</text>
+<text x="774" y="222" text-anchor="start" font-size="11.5" font-weight="700" fill="#ffffff">24VDC/2A HF</text>
+<text x="774" y="246" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" fill="#9999b3">6ES7 522-</text>
+<text x="774" y="260" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" fill="#9999b3">1BF00-0AB0</text>
+<text x="498" y="290" text-anchor="middle" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" fill="#66667e">slot 1</text>
+<text x="617" y="290" text-anchor="middle" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" fill="#66667e">slot 2</text>
+<text x="713" y="290" text-anchor="middle" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" fill="#66667e">slot 3</text>
+<text x="809" y="290" text-anchor="middle" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" fill="#66667e">slot 4</text>
+<rect x="420" y="322" width="440" height="36" rx="8" fill="#13133f" stroke="#ffd732" stroke-opacity=".7"/>
+<text x="436" y="345" text-anchor="start" font-size="12.5" font-weight="400" fill="#ffffff">SITOP PSU6200 · 24 V DC for PLC I/O and conveyor drives</text>
+<rect x="420" y="372" width="440" height="74" rx="10" fill="#13133f" stroke="#37376b"/>
+<text x="436" y="394" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#00ffb9">DB1 "Daten_ai" · the copilot's window into the PLC</text>
+<text x="436" y="414" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="400" fill="#d1d1de">DBX0.0 Start · DBX0.1 Stop · DBW2 Total_prod · DBX4.0/.1 Conveyors</text>
+<text x="436" y="432" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="400" fill="#d1d1de">DBX10.0-.2 arm triggers · DBX10.3-.6 Prox 1-4 · DBD12/16/22</text>
+<line x1="300" y1="258" x2="444" y2="258" stroke="#009999" stroke-width="3"/>
+<line x1="300" y1="258" x2="444" y2="258" stroke="#00ffb9" stroke-width="3" stroke-dasharray="6 14" class="flow"/>
+<text x="360" y="236" text-anchor="middle" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="400" fill="#d1d1de">Ethernet</text>
+<text x="360" y="284" text-anchor="middle" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="400" fill="#9999b3">ISO-on-TCP :102</text>
+<rect x="900" y="84" width="260" height="76" rx="12" fill="#0e0e38" stroke="#37376b"/>
+<text x="916" y="110" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#00ffb9" letter-spacing="1.2">PROXIMITY SENSORS</text>
+<text x="916" y="134" text-anchor="start" font-size="12" font-weight="400" fill="#d1d1de">S1-S4 along both conveyors</text>
+<rect x="1060" y="96" width="84" height="20" rx="10" fill="#ffd732" fill-opacity=".14"/>
+<text x="1101.8" y="110" text-anchor="middle" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="400" fill="#ffd732">DI I0.0-I0.3</text>
+<path d="M860 150 H880 V122 H900" fill="none" stroke="#ffd732" stroke-opacity=".75" stroke-width="1.8"/>
+<circle cx="860" cy="150" r="3" fill="#ffd732"/>
+<rect x="900" y="176" width="260" height="76" rx="12" fill="#0e0e38" stroke="#37376b"/>
+<text x="916" y="202" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#00ffb9" letter-spacing="1.2">EMERGENCY STOP</text>
+<text x="916" y="226" text-anchor="start" font-size="12" font-weight="400" fill="#d1d1de">E-stop button + Em1-Em3 inputs</text>
+<rect x="1060" y="188" width="84" height="20" rx="10" fill="#ffd732" fill-opacity=".14"/>
+<text x="1101.8" y="202" text-anchor="middle" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="400" fill="#ffd732">DI I0.4-I0.7</text>
+<path d="M860 190 H880 V214 H900" fill="none" stroke="#ffd732" stroke-opacity=".75" stroke-width="1.8"/>
+<circle cx="860" cy="190" r="3" fill="#ffd732"/>
+<rect x="900" y="268" width="260" height="76" rx="12" fill="#0e0e38" stroke="#37376b"/>
+<text x="916" y="294" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#00ffb9" letter-spacing="1.2">CONVEYOR 1 + 2</text>
+<text x="916" y="318" text-anchor="start" font-size="12" font-weight="400" fill="#d1d1de">24 V DC drives · fast / slow</text>
+<rect x="1047" y="280" width="97" height="20" rx="10" fill="#ffd732" fill-opacity=".14"/>
+<text x="1095.6" y="294" text-anchor="middle" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="400" fill="#ffd732">DQ Q16.4-Q16.7</text>
+<path d="M860 230 H880 V306 H900" fill="none" stroke="#ffd732" stroke-opacity=".75" stroke-width="1.8"/>
+<circle cx="860" cy="230" r="3" fill="#ffd732"/>
+<rect x="900" y="360" width="260" height="76" rx="12" fill="#0e0e38" stroke="#37376b"/>
+<text x="916" y="386" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#00ffb9" letter-spacing="1.2">ROBOT STATUS OUT</text>
+<text x="916" y="410" text-anchor="start" font-size="12" font-weight="400" fill="#d1d1de">Robot_1-3 for OPC UA mirroring</text>
+<rect x="1047" y="372" width="97" height="20" rx="10" fill="#ffd732" fill-opacity=".14"/>
+<text x="1095.6" y="386" text-anchor="middle" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="400" fill="#ffd732">DQ Q16.1-Q16.3</text>
+<path d="M860 270 H880 V398 H900" fill="none" stroke="#ffd732" stroke-opacity=".75" stroke-width="1.8"/>
+<circle cx="860" cy="270" r="3" fill="#ffd732"/>
+<path d="M170 446 V478 H790" fill="none" stroke="#00ffb9" stroke-width="2.2" stroke-dasharray="5 5" class="flow"/>
+<text x="186" y="470" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="400" fill="#9999b3">USB serial × 3 · uArm Python SDK</text>
+<line x1="490" y1="478" x2="490" y2="500" stroke="#00ffb9" stroke-width="2.2"/>
+<rect x="420" y="500" width="140" height="120" rx="12" fill="#0e0e38" stroke="#009999"/>
+<text x="436" y="526" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#00ffb9" letter-spacing="1.2">ARM 1</text>
+<text x="436" y="546" text-anchor="start" font-size="13" font-weight="700" fill="#ffffff">uArm Swift Pro</text>
+<text x="436" y="566" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="400" fill="#9999b3">USB · COM3</text>
+<text x="436" y="586" text-anchor="start" font-size="12" font-weight="400" fill="#00ffb9">vacuum pump</text>
+<text x="436" y="605" text-anchor="start" font-size="11" font-weight="400" fill="#d1d1de">picks PCB holders</text>
+<line x1="640" y1="478" x2="640" y2="500" stroke="#00ffb9" stroke-width="2.2"/>
+<rect x="570" y="500" width="140" height="120" rx="12" fill="#0e0e38" stroke="#009999"/>
+<text x="586" y="526" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#00ffb9" letter-spacing="1.2">ARM 2</text>
+<text x="586" y="546" text-anchor="start" font-size="13" font-weight="700" fill="#ffffff">uArm Swift Pro</text>
+<text x="586" y="566" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="400" fill="#9999b3">USB · COM5</text>
+<text x="586" y="586" text-anchor="start" font-size="12" font-weight="400" fill="#00ffb9">gripper</text>
+<text x="586" y="605" text-anchor="start" font-size="11" font-weight="400" fill="#d1d1de">transfers + holds</text>
+<line x1="790" y1="478" x2="790" y2="500" stroke="#00ffb9" stroke-width="2.2"/>
+<rect x="720" y="500" width="140" height="120" rx="12" fill="#0e0e38" stroke="#009999"/>
+<text x="736" y="526" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#00ffb9" letter-spacing="1.2">ARM 3</text>
+<text x="736" y="546" text-anchor="start" font-size="13" font-weight="700" fill="#ffffff">uArm Swift Pro</text>
+<text x="736" y="566" text-anchor="start" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="400" fill="#9999b3">USB · COM4</text>
+<text x="736" y="586" text-anchor="start" font-size="12" font-weight="400" fill="#00ffb9">vacuum pump</text>
+<text x="736" y="605" text-anchor="start" font-size="11" font-weight="400" fill="#d1d1de">places the PCB</text>
+<rect x="900" y="468" width="260" height="152" rx="12" fill="#0e0e38" stroke="#37376b"/>
+<text x="916" y="494" font-family="'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#00ffb9" letter-spacing="1.2">LEGEND</text>
+<line x1="916" y1="516" x2="950" y2="516" stroke="#009999" stroke-width="3"/>
+<text x="962" y="520" text-anchor="start" font-size="11.5" font-weight="400" fill="#d1d1de">Ethernet · Snap7 + TIA Openness</text>
+<line x1="916" y1="542" x2="950" y2="542" stroke="#00ffb9" stroke-width="3" stroke-dasharray="5 5"/>
+<text x="962" y="546" text-anchor="start" font-size="11.5" font-weight="400" fill="#d1d1de">USB serial to the robots</text>
+<line x1="916" y1="568" x2="950" y2="568" stroke="#ffd732" stroke-width="3"/>
+<text x="962" y="572" text-anchor="start" font-size="11.5" font-weight="400" fill="#d1d1de">24 V DC field wiring</text>
+<line x1="916" y1="594" x2="950" y2="594" stroke="#d1d1de" stroke-width="3" stroke-dasharray="4 4"/>
+<text x="962" y="598" text-anchor="start" font-size="11.5" font-weight="400" fill="#d1d1de">HTTPS to the language model</text>
+</svg>
